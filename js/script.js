@@ -215,3 +215,47 @@ fom.addEventListener('submit', (event)=>{
 
 })
 
+
+
+
+
+
+
+
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  const content = document.getElementById("content");
+
+  // GSAP Timeline for the bounce effect
+  const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+
+  tl.to(".loader-ball", {
+    y: -50,
+    duration: 0.5,
+    repeat: 3,
+    yoyo: true,
+  })
+    .to(".loader-ball", {
+      scale: 1.2,
+      duration: 0.3,
+      ease: "back.out(2)",
+    })
+    .to(".loader-ball", {
+      scale: 0,
+      opacity: 0,
+      duration: 0.4,
+    })
+    .to(".loader-text", {
+      opacity: 0,
+      duration: 0.4,
+    }, "-=0.4")
+    .to(loader, {
+      opacity: 0,
+      duration: 0.8,
+      onComplete: () => {
+        loader.style.display = "none";
+        content.style.display = "block";
+        gsap.fromTo(content, { opacity: 0 }, { opacity: 1, duration: 1 });
+      },
+    });
+});

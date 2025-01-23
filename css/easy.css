@@ -115,24 +115,12 @@
 }
 
 /* button css */
-.btn_hover1 {
+/* .btn_hover1 {
   display: inline-block;
   position: relative;
   overflow: hidden;
   border-radius: 50px;
-  border: 1.5px solid #d12bec;
-  color: #fff;
-  z-index: 1;
-  letter-spacing: 0.8px;
-  background: linear-gradient(180deg, #ff7527 0%, #fabf28 100%);
-  cursor: pointer;
-}
-.btn_hover2 {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50px;
-  border: 1.5px solid #d12bec;
+
   color: #fff;
   z-index: 1;
   letter-spacing: 0.8px;
@@ -147,58 +135,120 @@
   width: 100%;
   height: 100%;
   transition: all 0.3s ease-in;
-  background: linear-gradient(42deg, #7436bb 0.01%, #b520a3 100%);
+
   z-index: -1;
   top: 0;
   right: 0;
 }
+
+.btn_hover1:hover::before {
+  border-radius: 50px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in;
+
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
+
+.btn_hover1:hover::before {
+  width: 0;
+ 
+
+} */
+
+.btn_hover1, .btn_hover2, .btn_hover3 {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  z-index: 1;
+  letter-spacing: 0.8px;
+  padding: 14px 26px; /* Default padding */
+  font-size: 16px; /* Default font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+/* Individual button styles */
+.btn_hover1 {
+  background-color: #f18b26;
+  color: white;
+}
+
+.btn_hover1:hover {
+  background-color: #d07922;
+}
+
+.btn_hover1::before, .btn_hover2::before, .btn_hover3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.btn_hover1:hover::before {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.btn_hover2 {
+  background-color: #f18b26;
+  color: white;
+}
+
+.btn_hover2:hover {
+  background-color: #d07922;
+}
+
 .btn_hover2::before {
-  border-radius: 50px;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s ease-in;
-
-  z-index: -1;
-  top: 0;
-  right: 0;
-}
-
-.btn_hover1:hover::before {
-  border-radius: 50px;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s ease-in;
-  background: linear-gradient(42deg, #7436bb 0.01%, #b520a3 100%);
-  z-index: -1;
-  top: 0;
-  right: 0;
-}
-.btn_hover2:hover::before {
-  border-radius: 50px;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s ease-in;
-  z-index: -1;
-  top: 0;
-  right: 0;
-}
-
-.btn_hover1:hover::before {
-  width: 0;
-  background: linear-gradient(42deg, #7436bb 0.01%, #b520a3 100%);
+  background: rgba(147, 69, 1, 0.4);
 }
 
 .btn_hover2:hover::before {
-  width: 0;
-  background: linear-gradient(42deg, #ff7527 0%, #fabf28 100%);
+  width: 300px;
+  height: 200px;
 }
+
+.btn_hover3 {
+  background-color: inherit;
+  color: white;
+  border: 2px solid #ed9640;
+}
+
+.btn_hover3:hover {
+  background-color: inherit;
+}
+
+.btn_hover3::before {
+  background: rgba(250, 175, 36, 0.589);
+}
+
+.btn_hover3:hover::before {
+  width: 300px;
+  height: 200px;
+}
+
+
+/* Text lowercase css */
 
 .text-lowercase{
   text-transform: lowercase;
 }
+
+
+

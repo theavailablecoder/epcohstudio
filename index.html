@@ -13,13 +13,25 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/slick.min.css" />
     <link rel="stylesheet" href="css/easy.css" />
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
+  
+
+  
     <div class="site-wrapper">
+ <!-- Loader HTML -->
+ <div id="loader">
+  <div class="loader-ball"></div>
+  <div class="loader-text">Unleashing Creativity...</div>
+</div>
       <div class="header-index">
+        
         <!-- header section -->
         <header>
           <div class="container navbar">
@@ -151,16 +163,16 @@
           
           <div class="container" data-aos="zoom-in">
             <div>
-              <div class="hero-social-icon flex">
+              <!-- <div class="hero-social-icon flex">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <hr />
-              </div>
+              </div> -->
              
               <div class="center-data flex flex-col gap-1">
                 <h1>EPOCH STUDIO</h1>
-                <h3>Epoch Multimedia Animation Studio</h3>
+                <h3>WE ARE CUTTING EDGE FULL DIGITAL AGENCY</h3>
                 <div class="center-btn flex gap-2 mt-1">
                   <a href="/" class="btn_hover1">Get Started</a>
                   <a href="/" class="btn_hover1">Discover more</a>
@@ -187,8 +199,11 @@
                   />
                 </figure>
                 <h4>MULTIMEDIA Services</h4>
-                Effective communication is key in today’s business through
-                channels like Business and Interactive Presentations.
+                <p>
+                  Effective communication is key in today’s business through
+                  channels like Business and Interactive Presentations.
+                </p>
+             
               </div>
             </div>
             <div class="header-card" data-aos="fade-down">
@@ -197,8 +212,10 @@
                   <img src="Images/icon/feature2.png" alt="" />
                 </figure>
                 <h4>ANIMATION Resurrect</h4>
+               <p>
                 Flash has revolutionized animation, transforming visual
                 storytelling and enabling dynamic, interactive experiences.
+               </p>
               </div>
             </div>
             <div class="header-card" data-aos="fade-up">
@@ -207,8 +224,8 @@
                   <img src="Images/icon/feature3.png" alt="" />
                 </figure>
                 <h4>INTERNET Solutions</h4>
-                With the power to bring a globe in a single room, internet has
-                become the best business tool of the modern world.
+               <p> With the power to bring a globe in a single room, internet has
+                become the best business tool of the modern world.</p>
               </div>
             </div>
             <div class="header-card" data-aos="fade-down">
@@ -217,8 +234,10 @@
                   <img src="Images/icon/feature4.png" alt="" />
                 </figure>
                 <h4>DESGIN SERVICES</h4>
-                From what you need to introduce yourself in a meeting to what
+                <p>
+                  From what you need to introduce yourself in a meeting to what
                 you need to get your brand moving in the marketplace
+                </p>
               </div>
             </div>
           </div>
@@ -234,12 +253,12 @@
             <h3 class="mb-15" data-aos="zoom-in">OUR CLIENTS</h3>
           </div>
           <div class="logoipsum-slider sliderlogo" data-aos="zoom-in">
-            <figure><img src="Images/home/logoipsum1.svg" alt="" /></figure>
-            <figure><img src="Images/home/logoipsum2.svg" alt="" /></figure>
-            <figure><img src="Images/home/logoipsum3.svg" alt="" /></figure>
-            <figure><img src="Images/home/logoipsum4.svg" alt="" /></figure>
-            <figure><img src="Images/home/logoipsum5.svg" alt="" /></figure>
-            <figure><img src="Images/home/logoipsum6.svg" alt="" /></figure>
+            <figure><img src="Images/icon/icons8-microsoft.svg" alt="" /></figure>
+            <figure><img src="Images/icon/litecoin-logo-svgrepo-com.svg" alt="" /></figure>
+            <figure><img src="Images/icon/apple-logo-svgrepo-com.svg" alt="" /></figure>
+            <figure><img src="Images/icon/coursera.svg" alt="" /></figure>
+            <figure><img src="Images/icon/klm-3.svg" alt="" /></figure>
+            <figure><img src="Images/icon/microsoft-office-2013.svg" alt="" /></figure>
           </div>
           <hr class="hr2" />
         </div>
@@ -255,7 +274,7 @@
                 <hr />
                 <h5>ABOUT US</h5>
               </div>
-              <h2>EPOCH STUDIO TRANSFORMING ANIMATION</h2>
+              <h2>About Behind the Frames</h2>
               <p>
                 Epoch Studio, founded over a decade ago, is one of India’s top animation and production companies, specializing in 2D animations and diverse media services. Known for exceptional quality, it excels in animations, e-learning, presentations, documentaries, reality, drama, sports, lifestyle, and children’s education and entertainment.
               </p>
@@ -273,8 +292,8 @@
                 </h5>
               </div>
               <div class="flex mt-3 gap-2">
-                <a href="#" class="btn_hover1">Get started</a>
-                <a href="#" class="btn_hover1">Discover More</a>
+                <a href="#" class="btn_hover2">Get started</a>
+                <a href="#" class="btn_hover2">Discover More</a>
               </div>
             </div>
             <div class="w-50 about-imgs flex flex-center" data-aos="fade-down">
@@ -316,7 +335,7 @@
                 </p>
               </div>
               <div class="flex w-100 flex-end">
-                <a href="/" class="btn_hover1">View All Projects</a>
+                <a href="/" class="btn_hover3">View All Projects</a>
               </div>
               <hr class="mt-3" />
             </div>
@@ -581,13 +600,11 @@
                 </div>
                 <h2 class="mt-15">Services we offer</h2>
                 <p class="mt-15">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Illum illo consequuntur beatae laboriosam ducimus enim
-                  dignissimos, eum laudantium magni odit!
+                  We offer tailored services to meet your unique needs with quality and efficiency. Explore what we can do for you!
                 </p>
               </div>
               <div class="w-33 mt-15 flex flex-end">
-                <a href="/" class="btn_hover1">View All Services</a>
+                <a href="/" class="btn_hover2">View All Services</a>
               </div>
               <hr />
             </div>
@@ -637,17 +654,17 @@ Our multimedia services bring your vision to life through dynamic visuals, engag
        <section class="experience">
         <div class="container">
           <div class="flex flex-wrap exp-center" data-aos="fade-up">
-            <div class="w-66">
+            <div class="w-66 ex-content">
               <div class="flex gap-1">
                 <hr class="exp-hr1 m-0">
                 <h5>Experience</h5>
               </div>
               <h2>Grow Your Online Presence</h2>
-              <p class="mt-1">
+              <p class="mt-1 ex-p">
                 With years of experience, we help you grow your online presence by building impactful strategies that boost visibility and engagement.</p>
             </div>
             <div class="w-33 mt-3 flex flex-end">
-              <a href="/" class="btn_hover1">Get Started</a>
+              <a href="/" class="btn_hover3">Get Started</a>
             </div>
             <div class="flex flex-sb">
               <div class="w-50 p-relative flex flex-center" data-aos="zoom-in">
@@ -732,7 +749,7 @@ Our multimedia services bring your vision to life through dynamic visuals, engag
                       </div>
                   </div>
                   <div class="flex flex-center" data-aos="zoom-in">
-                    <a href="/" class="btn_hover2">Contact Now</a>
+                    <a href="/" class="btn_hover3">Contact Now</a>
                   </div>
                 </div>
        </section>
@@ -742,7 +759,7 @@ Our multimedia services bring your vision to life through dynamic visuals, engag
         <section class="team">
           <div class="container">
             <div class="flex team-center" data-aos="fade-up">
-              <div class="w-66">
+              <div class="w-66 team-cont">
                 <div class="flex gap-1">
                    <hr class="team-hr1">
                    <h5>Our Team</h5>
@@ -753,7 +770,7 @@ Our multimedia services bring your vision to life through dynamic visuals, engag
                 </p>
               </div>
               <div class="w-33 mt-15 flex flex-end">
-                <a href="/" class="btn_hover2">All members</a>
+                <a href="/" class="btn_hover3">All members</a>
               </div>
             </div>
             <div class="team-slider flex mt-15"  data-aos="fade-right" data-aos-delay="400">
@@ -959,7 +976,7 @@ Our multimedia services bring your vision to life through dynamic visuals, engag
               <section class="blog">
                 <div class="container">
                   <div class="flex blog-center">
-                    <div class="w-66">
+                    <div class="w-66 blog-cont" data-aos="fade-up">
                        <div class="flex gap-1">
                         <hr class="blog-hr1">
                         <h5>BLOGS</h5>
@@ -968,7 +985,7 @@ Our multimedia services bring your vision to life through dynamic visuals, engag
                        <p class="mt-1 mb-15">Check out our latest posts to stay informed on the latest trends, tips, and insights in the world of design, technology, and education.</p>
                     </div>
                     <div class="w-33 mt-1 flex flex-end">
-                      <a href="/" class="btn_hover1">See all blogs</a>
+                      <a href="/" class="btn_hover2">See all blogs</a>
                     </div>
                   </div>
                   <div class="flex gap-1 mt-15 blog-cards">
@@ -998,8 +1015,8 @@ Our multimedia services bring your vision to life through dynamic visuals, engag
               </section>
              <!--End Blog Section-->
 
-  <!--Start Footer Section-->
-  <footer>
+             <!--Start Footer Section-->
+               <footer>
     <div class="container">
       <div class="footer-hr flex flex-col">
         <div class="flex gap-1" data-aos="fade-left">
@@ -1075,13 +1092,13 @@ Our multimedia services bring your vision to life through dynamic visuals, engag
          <h6>Copyright &copy; 2025 Rights Reserved by <a href="/">EPOCH STUDIO</a></h6>
       </div>
     </div>
-   </footer>
- <!--End Footer Section-->
+              </footer>
+             <!--End Footer Section-->
 
             </div>
+            <!--End site wrap-->
                
 
-         <!--End site wrap-->
          <!--Button Back to top-->
          <button onclick="scrollToTop()" id="backToTopBtn" class="btn_hover2">
           <i class="fa-solid fa-arrow-turn-up"></i>
